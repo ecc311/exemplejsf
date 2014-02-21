@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd"
+    version="2.2">
+	<managed-bean>
+		<managed-bean-name>saludaAlumne</managed-bean-name>
+		<managed-bean-class>paquet.SaludaAlumne</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+		<managed-property>
+			<property-name>alumne</property-name>
+			<property-class>paquet.AlumneMati</property-class>
+			<value></value>
+		</managed-property>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>Gestor</managed-bean-name>
+		<managed-bean-class>paquet.Gestor</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<navigation-rule>
+		<display-name>carregar.xhtml</display-name>
+		<from-view-id>/carregar.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>succes</from-outcome>
+			<to-view-id>/saludo.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>index.xhtml</display-name>
+		<from-view-id>/index.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>succes</from-outcome>
+			<to-view-id>/principal.html</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+	<navigation-rule>
+		<display-name>saludo.xhtml</display-name>
+		<from-view-id>/saludo.xhtml</from-view-id>
+		<navigation-case>
+			<from-outcome>succes</from-outcome>
+			<to-view-id>/principal.html</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+</faces-config>

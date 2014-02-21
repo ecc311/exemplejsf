@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13928875814161" configfile="/jsfbd/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="saludo.xhtml" x="444" y="192" id="pf13929144025353" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" outlinks="pf13929155887519" inlinks="pf13929144025354" path="/saludo.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="carregar.xhtml" x="264" y="192" id="pf13929144025355" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf13929144025354" path="/carregar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="264" y="312" id="pf13929153375406" outlinks="pf13929153375407" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="principal.html" x="456" y="312" id="pf13929153375408" inlinks="pf13929153375407 pf13929155887519" path="/principal.html"/>
+  <links id="pf13929144025354" target="pf13929144025353" source="pf13929144025355" outcome="succes"/>
+  <links id="pf13929153375407" target="pf13929153375408" source="pf13929153375406" outcome="succes"/>
+  <links id="pf13929155887519" target="pf13929153375408" source="pf13929144025353" outcome="succes"/>
+</pageflow:Pageflow>

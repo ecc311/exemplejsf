@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"    
+      xmlns:h="http://java.sun.com/jsf/html">
+ 
+    <h:head>
+     <title>Alumne</title>
+    </h:head>
+    <h:body>
+     <h2>Demo en JSF</h2>
+     <h3>Nom: #{Gestor.alumne.nomPersona}<br></br> 
+     	 Password: #{Gestor.alumne.passwordPersona}<br></br>
+     	 Edat: #{Gestor.alumne.edatPersona}<br></br>
+     	 Grup:  #{Gestor.alumne.grupPersona}<br></br>
+     	 Horari:  #{Gestor.alumne.horariPersona}</h3>
+     	 
+     	  <h:commandButton id="submit" value="aceptar" action="#{Gestor.principal}"></h:commandButton>
+    </h:body>
+</html>

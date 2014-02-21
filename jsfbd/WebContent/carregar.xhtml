@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+ 
+    <h:head>
+        <title>Registre Alumne</title>
+    </h:head>
+    <h:body>
+     <h2>Registre Alumne</h2>
+     <h:form>
+      <h:panelGrid columns="2">
+      <p>Selecciona una id</p>
+      
+	<h:selectOneMenu value="#{Gestor.nomalumne}">
+	<f:selectItems value="#{Gestor.getLlista()}"/>
+	</h:selectOneMenu>
+	
+	<h:commandButton id="submit" value="aceptar" action="#{Gestor.comprovar}"> 
+     </h:commandButton>    
+    
+        </h:panelGrid>
+     </h:form>
+    </h:body>
+</html>
